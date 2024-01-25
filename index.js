@@ -28,10 +28,18 @@ const buttonText = document.querySelector('[data-js="answerButton"]');
 /* console.log(answerElement.classList.contains("hidden")); */
 /* console.log(answerElement.classList.contains("hidden")); */
 
-function changeButtonText() {
+/* function changeButtonText() {
   if (answerElement.classList.contains("hidden")) {
     console.log("Yeahhhhh");
   } else {
     console.log("Noooooooo");
+  }
+} */
+
+function changeButtonText() {
+  if (answerElement.classList.contains("hidden")) {
+    buttonText.innerHTML = "Show Answer";
+  } else {
+    buttonText.innerHTML = "Hide Answer";
   }
 }
