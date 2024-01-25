@@ -28,14 +28,6 @@ const buttonText = document.querySelector('[data-js="answerButton"]');
 /* console.log(answerElement.classList.contains("hidden")); */
 /* console.log(answerElement.classList.contains("hidden")); */
 
-/* function changeButtonText() {
-  if (answerElement.classList.contains("hidden")) {
-    console.log("Yeahhhhh");
-  } else {
-    console.log("Noooooooo");
-  }
-} */
-
 function changeButtonText() {
   if (answerElement.classList.contains("hidden")) {
     buttonText.innerHTML = "Show Answer";
@@ -43,3 +35,15 @@ function changeButtonText() {
     buttonText.innerHTML = "Hide Answer";
   }
 }
+
+/* function changeButtonText wurde oben in den EventListener 
+für den Answer-Button eingefügt. Ausführung bei click!*/
+
+/* TEST TEST TEST -------------------------
+function changeButtonText() {
+  if (answerElement.classList.contains("hidden")) {
+    console.log("Yeahhhhh");
+  } else {
+    console.log("Noooooooo");
+  }
+} --------------------------------------*/
