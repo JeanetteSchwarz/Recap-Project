@@ -18,4 +18,20 @@ console.log(answerElement); */
 
 answerButton.addEventListener("click", () => {
   answerElement.classList.toggle("hidden");
+  changeButtonText();
 });
+
+//Text auf Answer-Button ändern//
+
+const buttonText = document.querySelector('[data-js="answerButton"]');
+
+/* console.log(answerElement.classList.contains("hidden")); */
+/* console.log(answerElement.classList.contains("hidden")); */
+
+function changeButtonText() {
+  if (answerElement.classList.contains("hidden")) {
+    console.log("Yeahhhhh");
+  } else {
+    console.log("Noooooooo");
+  }
+}
